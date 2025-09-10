@@ -1,0 +1,15 @@
+name: sedoraid-public
+
+services:
+  tariff:
+    container_name: tariff
+    build:
+      context: ./tariff
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - "../../tariff:/app"
+    stop_signal: SIGKILL
+    tty: true
+    command: npm run dev
