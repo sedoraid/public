@@ -10,6 +10,7 @@ services:
       - "3000:3000"
     volumes:
       - "../../tariff:/app"
+      - "../../biome.base.json:/biome.base.json"
     stop_signal: SIGKILL
     tty: true
     command: npm run dev
