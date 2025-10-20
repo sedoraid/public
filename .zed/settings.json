@@ -27,7 +27,6 @@
 		"TypeScript": {
 			"language_servers": [
 				"!eslint",
-				"!typescript-language-server",
 				"!vtsls",
 				"..."
 			],
